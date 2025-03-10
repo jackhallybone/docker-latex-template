@@ -1,0 +1,8 @@
+services:
+    latex:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - .:/app
+        command: latexmk -pvc -view=none -outdir=/app/build -cd /app/src/document.tex
