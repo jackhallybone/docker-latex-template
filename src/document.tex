@@ -1,22 +1,30 @@
-\documentclass{article}
+\documentclass[a4paper,11pt,oneside]{article}
+\usepackage[width=16cm,lines=49,vmarginratio={3:4},top=3cm,headsep=15pt,footskip=35pt]{geometry} % for layout
+\usepackage{graphicx} % for figures
 
 \bibliographystyle{plain}
 
 \begin{document}
 
-\title{Example LaTeX Document with BibTeX}
-\author{Author Name}
-\date{\today}
+    \title{Example LaTeX Document with BibTeX}
+    \author{Author Name}
+    \date{\today}
 
-\maketitle
+    \maketitle
 
-\section{Introduction}
-Example introduction section with reference which are in the .bib file \cite{example2025}.
+    \section{Introduction}
+    Example introduction section with reference which are in the .bib file \cite{example2025}.
 
-\section{Conclusion}
-Example conclusion section.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[width=0.5\textwidth]{figures/placeholder.png}
+        \caption{An example figure caption.}
+        \label{fig:example}
+    \end{figure}
 
-\clearpage
-\bibliography{references}  % from references.bib
+    \section{Conclusion}
+    Example conclusion section.
+
+    \bibliography{references} % from references.bib
 
 \end{document}
